@@ -103,7 +103,7 @@ module.exports = function() {
         startX = tag.x,
         startY = tag.y,
         maxDelta = Math.sqrt(size[0] * size[0] + size[1] * size[1]),
-        s = spiral(size),
+        s = spiral(size, tag),
         dt = random() < .5 ? 1 : -1,
         t = -dt,
         dxdy,
